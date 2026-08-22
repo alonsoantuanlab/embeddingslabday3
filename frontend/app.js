@@ -1,5 +1,11 @@
 const form = document.getElementById('recordForm');
-const results = document.getElementById('results');
+const thresholdInput = document.getElementById('threshold');
+const thresholdVal = document.getElementById('thresholdVal');
+
+thresholdInput.addEventListener('input', () => {
+  thresholdVal.textContent = thresholdInput.value;
+});
+
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -24,15 +30,21 @@ form.addEventListener('submit', async (e) => {
     const savedDiv = document.getElementById('cardSaved');
     savedDiv.innerHTML = `<strong>Guardado:</strong><pre>${JSON.stringify(data.saved, null, 2)}</pre>`;
 
-    // render predictions table
+    // render predictions table (filter by threshold)
     const preds = data.predictions || [];
     const predDiv = document.getElementById('predictions');
-    if (preds.length === 0) {
-      predDiv.innerHTML = '<em>No hay predicciones</em>';
+    const thresh = Number(thresholdInput.value || 0);
+    const filteredPreds = preds.filter(p => {
+      const perc = (p.similarity_percent !== undefined && p.similarity_percent !== null) ? p.similarity_percent : Math.round(((p.avg_score+1)/2*100)*100)/100;
+      return perc >= thresh;
+    });
+    if (filteredPreds.length === 0) {
+      predDiv.innerHTML = '<em>No hay predicciones por encima del umbral</em>';
     } else {
-      let html = '<table border="1" cellpadding="6"><tr><th>Diagnóstico</th><th>Similitud (%)</th></tr>';
-      preds.forEach(p => {
-        html += `<tr><td>${p.diagnostico}</td><td style="text-align:right">${p.similarity_percent ?? p.similarity_percent === 0 ? p.similarity_percent : (p.similarity_percent || (Math.round(((p.avg_score+1)/2*100)*100)/100))}%</td></tr>`;
+      let html = '<table><tr><th>Diagnóstico</th><th>Similitud (%)</th></tr>';
+      filteredPreds.forEach(p => {
+        const perc = (p.similarity_percent !== undefined && p.similarity_percent !== null) ? p.similarity_percent : Math.round(((p.avg_score+1)/2*100)*100)/100;
+        html += `<tr><td>${p.diagnostico}</td><td style="text-align:right">${perc}%</td></tr>`;
       });
       html += '</table>';
       predDiv.innerHTML = html;
@@ -41,11 +53,13 @@ form.addEventListener('submit', async (e) => {
     // render matches table
     const matches = data.matches || [];
     const matchDiv = document.getElementById('matches');
-    if (matches.length === 0) {
-      matchDiv.innerHTML = '<em>No hay registros similares</em>';
+    const threshMatches = Number(thresholdInput.value || 0);
+    const filteredMatches = matches.filter(m => (m.similarity_percent || 0) >= threshMatches);
+    if (filteredMatches.length === 0) {
+      matchDiv.innerHTML = '<em>No hay registros similares por encima del umbral</em>';
     } else {
-      let mhtml = '<table border="1" cellpadding="6"><tr><th>Nombre</th><th>Síntomas</th><th>Similitud (%)</th></tr>';
-      matches.forEach(m => {
+      let mhtml = '<table><tr><th>Nombre</th><th>Síntomas</th><th>Similitud (%)</th></tr>';
+      filteredMatches.forEach(m => {
         const meta = m.meta || {};
         mhtml += `<tr><td>${meta.Nombre || ''}</td><td>${meta.Sintomas || ''}</td><td style="text-align:right">${m.similarity_percent}</td></tr>`;
       });
