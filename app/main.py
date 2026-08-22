@@ -107,7 +107,7 @@ class Predictor:
             self.indexer.add(vec.astype('float32'), saved)
         # persist to disk
         self.save_records_to_file()
-        return {'saved': saved, 'predictions': pred.get('predictions', [])}
+        return {'saved': saved, 'predictions': pred.get('predictions', []), 'matches': pred.get('matches', [])}
 
 
 predictor = Predictor()

@@ -20,9 +20,38 @@ form.addEventListener('submit', async (e) => {
       body: JSON.stringify(payload)
     });
     const data = await res.json();
-    // show saved record and top prediction
-    let out = 'Guardado:\n' + JSON.stringify(data.saved || data.saved, null, 2) + '\n\nPredicciones:\n' + JSON.stringify(data.predictions || data.predictions, null, 2);
-    results.textContent = out;
+    // show saved record
+    const savedDiv = document.getElementById('cardSaved');
+    savedDiv.innerHTML = `<strong>Guardado:</strong><pre>${JSON.stringify(data.saved, null, 2)}</pre>`;
+
+    // render predictions table
+    const preds = data.predictions || [];
+    const predDiv = document.getElementById('predictions');
+    if (preds.length === 0) {
+      predDiv.innerHTML = '<em>No hay predicciones</em>';
+    } else {
+      let html = '<table border="1" cellpadding="6"><tr><th>Diagnóstico</th><th>Similitud (%)</th></tr>';
+      preds.forEach(p => {
+        html += `<tr><td>${p.diagnostico}</td><td style="text-align:right">${p.similarity_percent ?? p.similarity_percent === 0 ? p.similarity_percent : (p.similarity_percent || (Math.round(((p.avg_score+1)/2*100)*100)/100))}%</td></tr>`;
+      });
+      html += '</table>';
+      predDiv.innerHTML = html;
+    }
+
+    // render matches table
+    const matches = data.matches || [];
+    const matchDiv = document.getElementById('matches');
+    if (matches.length === 0) {
+      matchDiv.innerHTML = '<em>No hay registros similares</em>';
+    } else {
+      let mhtml = '<table border="1" cellpadding="6"><tr><th>Nombre</th><th>Síntomas</th><th>Similitud (%)</th></tr>';
+      matches.forEach(m => {
+        const meta = m.meta || {};
+        mhtml += `<tr><td>${meta.Nombre || ''}</td><td>${meta.Sintomas || ''}</td><td style="text-align:right">${m.similarity_percent}</td></tr>`;
+      });
+      mhtml += '</table>';
+      matchDiv.innerHTML = mhtml;
+    }
   } catch (err) {
     results.textContent = 'Error: ' + err;
   }

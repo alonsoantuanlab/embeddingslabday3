@@ -22,6 +22,23 @@ with st.form('predict'):
         # call add_record so it is saved and prediction returned
         res = requests.post(f'{API_URL}/add_record', json=payload)
         try:
-            st.json(res.json())
+            data = res.json()
+            saved = data.get('saved')
+            preds = data.get('predictions', [])
+            matches = data.get('matches', [])
+
+            st.subheader('Registro Guardado')
+            st.json(saved)
+
+            if preds:
+                st.subheader('Predicciones')
+                import pandas as pd
+                df = pd.DataFrame([{'Diagnostico': p['diagnostico'], 'Similitud (%)': p.get('similarity_percent') } for p in preds])
+                st.table(df)
+
+            if matches:
+                st.subheader('Registros Similares')
+                dfm = pd.DataFrame([{'Nombre': m['meta'].get('Nombre'), 'Sintomas': m['meta'].get('Sintomas'), 'Similitud (%)': m.get('similarity_percent')} for m in matches])
+                st.table(dfm)
         except Exception:
             st.error('Error al comunicarse con la API')
