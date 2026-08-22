@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import json
 import os
-from app.embeddings import embed_texts
+import app.embeddings as embeddings
 from app.indexer import FAISSIndexer
 import numpy as np
 
@@ -34,7 +34,7 @@ class Predictor:
         with open(path, 'r', encoding='utf-8') as f:
             self.records = json.load(f)
         self.texts = [self._record_to_text(r) for r in self.records]
-        vecs = embed_texts(self.texts)
+        vecs = embeddings.embed_texts(self.texts)
         self.dim = vecs.shape[1]
         self.indexer = FAISSIndexer(self.dim)
         self.indexer.build(vecs.astype('float32'), self.records)
@@ -44,7 +44,7 @@ class Predictor:
 
     def predict(self, record: dict, top_k: int = 3):
         text = self._record_to_text(record)
-        vec = embed_texts([text])[0]
+        vec = embeddings.embed_texts([text])[0]
         res = self.indexer.query(vec.astype('float32'), top_k=top_k)[0]
         # simple vote weighted by similarity
         scores = {}
@@ -76,7 +76,7 @@ class Predictor:
         self.records.append(saved)
         # update texts and index incrementally
         text = self._record_to_text(saved)
-        vec = embed_texts([text])[0]
+        vec = embeddings.embed_texts([text])[0]
         # ensure indexer exists
         if self.indexer is None:
             self.dim = vec.shape[0]

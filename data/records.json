@@ -33,5 +33,19 @@
     "sexo": "F",
     "Sintomas": "Fatiga crónica, aumento de peso, intolerancia al frío",
     "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
   }
 ]
