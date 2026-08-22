@@ -19,5 +19,9 @@ with st.form('predict'):
     submitted = st.form_submit_button('Analizar')
     if submitted:
         payload = {"Nombre": nombre, "edad": int(edad), "sexo": sexo, "Sintomas": sintomas}
-        res = requests.post(f'{API_URL}/predict', json=payload)
-        st.json(res.json())
+        # call add_record so it is saved and prediction returned
+        res = requests.post(f'{API_URL}/add_record', json=payload)
+        try:
+            st.json(res.json())
+        except Exception:
+            st.error('Error al comunicarse con la API')

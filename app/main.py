@@ -55,6 +55,39 @@ class Predictor:
         preds = sorted(scores.items(), key=lambda x: x[1], reverse=True)
         return {'matches': res, 'predictions': [{'diagnostico': d, 'score': float(s)} for d, s in preds]}
 
+    def save_records_to_file(self):
+        path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'records.json'))
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(self.records, f, ensure_ascii=False, indent=2)
+
+    def add_and_predict(self, record: dict, top_k: int = 3):
+        # predict using current index
+        pred = self.predict(record, top_k=top_k)
+        # choose top prediction if available
+        top_diag = None
+        if pred.get('predictions'):
+            top_diag = pred['predictions'][0]['diagnostico']
+        if not top_diag:
+            top_diag = 'Desconocido'
+        # attach possible diagnosis to record
+        saved = record.copy()
+        saved['Posible Diagnostico'] = top_diag
+        # append to in-memory records
+        self.records.append(saved)
+        # update texts and index incrementally
+        text = self._record_to_text(saved)
+        vec = embed_texts([text])[0]
+        # ensure indexer exists
+        if self.indexer is None:
+            self.dim = vec.shape[0]
+            self.indexer = FAISSIndexer(self.dim)
+            self.indexer.build(np.array([vec]).astype('float32'), [saved])
+        else:
+            self.indexer.add(vec.astype('float32'), saved)
+        # persist to disk
+        self.save_records_to_file()
+        return {'saved': saved, 'predictions': pred.get('predictions', [])}
+
 
 predictor = Predictor()
 
@@ -73,6 +106,15 @@ def get_records():
 def predict(r: RecordIn):
     try:
         out = predictor.predict(r.dict(), top_k=5)
+        return JSONResponse(out)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post('/add_record')
+def add_record(r: RecordIn):
+    try:
+        out = predictor.add_and_predict(r.dict(), top_k=5)
         return JSONResponse(out)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

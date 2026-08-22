@@ -13,13 +13,16 @@ form.addEventListener('submit', async (e) => {
   results.textContent = 'Analizando...';
 
   try {
-    const res = await fetch('/predict', {
+    // send to add_record so the server predicts and stores the record
+    const res = await fetch('/add_record', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(payload)
     });
     const data = await res.json();
-    results.textContent = JSON.stringify(data, null, 2);
+    // show saved record and top prediction
+    let out = 'Guardado:\n' + JSON.stringify(data.saved || data.saved, null, 2) + '\n\nPredicciones:\n' + JSON.stringify(data.predictions || data.predictions, null, 2);
+    results.textContent = out;
   } catch (err) {
     results.textContent = 'Error: ' + err;
   }

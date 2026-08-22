@@ -16,6 +16,15 @@ class FAISSIndexer:
         self.index.add(vectors)
         self.id2meta = metas
 
+    def add(self, vector: np.ndarray, meta: dict):
+        """Add a single vector and its metadata to the index."""
+        if vector.dtype != np.float32:
+            vector = vector.astype('float32')
+        if vector.ndim == 1:
+            vector = vector.reshape(1, -1)
+        self.index.add(vector)
+        self.id2meta.append(meta)
+
     def query(self, vector: np.ndarray, top_k: int = 5):
         if vector.dtype != np.float32:
             vector = vector.astype('float32')
