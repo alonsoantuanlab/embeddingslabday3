@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medical Record Analyzer</title>
+  </head>
+  <body>
+    <h1>Analizador de Registros Médicos</h1>
+    <form id="recordForm">
+      <label>Nombre: <input type="text" id="nombre" required></label><br>
+      <label>Edad: <input type="number" id="edad" required></label><br>
+      <label>Sexo: <select id="sexo"><option>F</option><option>M</option></select></label><br>
+      <label>Síntomas:<br><textarea id="sintomas" rows="4" cols="50" required></textarea></label><br>
+      <button type="submit">Analizar</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <pre id="results"></pre>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

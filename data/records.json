@@ -1,0 +1,37 @@
+[
+  {
+    "Nombre": "María López",
+    "edad": 54,
+    "sexo": "F",
+    "Sintomas": "Dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Juan Pérez",
+    "edad": 39,
+    "sexo": "M",
+    "Sintomas": "Fiebre alta, tos seca, pérdida de gusto y olfato",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Ana García",
+    "edad": 27,
+    "sexo": "F",
+    "Sintomas": "Dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Carlos Ruiz",
+    "edad": 65,
+    "sexo": "M",
+    "Sintomas": "Pérdida de memoria reciente, confusión, cambios de humor",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Lucía Fernández",
+    "edad": 42,
+    "sexo": "F",
+    "Sintomas": "Fatiga crónica, aumento de peso, intolerancia al frío",
+    "Posible Diagnostico": "Hipotiroidismo"
+  }
+]
