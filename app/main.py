@@ -115,7 +115,10 @@ predictor = Predictor()
 
 @app.on_event('startup')
 def startup_event():
-    predictor.load()
+    # Defer heavy model loading until first request to avoid requiring
+    # sentence-transformers at server startup in lightweight test environments.
+    # Predictor will be loaded lazily when an endpoint needs it.
+    return None
 
 
 @app.get('/records')
@@ -126,6 +129,8 @@ def get_records():
 @app.post('/predict')
 def predict(r: RecordIn):
     try:
+        if predictor.indexer is None:
+            predictor.load()
         out = predictor.predict(r.dict(), top_k=5)
         return JSONResponse(out)
     except Exception as e:
@@ -135,6 +140,8 @@ def predict(r: RecordIn):
 @app.post('/add_record')
 def add_record(r: RecordIn):
     try:
+        if predictor.indexer is None:
+            predictor.load()
         out = predictor.add_and_predict(r.dict(), top_k=5)
         return JSONResponse(out)
     except Exception as e:
