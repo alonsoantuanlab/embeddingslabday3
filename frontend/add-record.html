@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agregar Registro</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="top-nav">
+        <div class="brand">
+          <span class="brand-icon">✚</span>
+          <span>MedMatch</span>
+        </div>
+        <div class="nav-links">
+          <a class="nav-button" href="/">
+            <span>🏠</span> Inicio
+          </a>
+          <a class="nav-button primary" href="/new-record">
+            <span>📝</span> Agregar registro
+          </a>
+        </div>
+      </nav>
+
+      <main class="form-panel">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Nuevo caso</p>
+          <h1>Agregar registro médico</h1>
+        </div>
+
+        <form id="recordForm" class="record-form">
+          <div class="field-grid">
+            <label class="field">
+              <span>Nombre</span>
+              <input type="text" id="nombre" placeholder="Ej: Sofía Ramírez" required>
+            </label>
+
+            <label class="field">
+              <span>Edad</span>
+              <input type="number" id="edad" min="0" max="120" placeholder="30" required>
+            </label>
+
+            <label class="field">
+              <span>Sexo</span>
+              <select id="sexo">
+                <option>F</option>
+                <option>M</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Síntomas</span>
+            <textarea id="sintomas" rows="5" placeholder="Describe los síntomas del paciente..." required></textarea>
+          </label>
+
+          <button class="submit-button" type="submit">
+            <span>⚕️</span> Analizar y guardar
+          </button>
+        </form>
+
+        <div class="threshold-box">
+          <label for="threshold">Umbral de similitud: <span id="thresholdVal">50</span>%</label>
+          <input type="range" id="threshold" min="0" max="100" value="50">
+        </div>
+
+        <div id="results" class="status-banner" aria-live="polite"></div>
+
+        <div class="results-panel">
+          <div id="cardSaved" class="result-box"></div>
+
+          <div class="result-section">
+            <h3>Predicciones</h3>
+            <div id="predictions"></div>
+          </div>
+
+          <div class="result-section">
+            <h3>Registros similares</h3>
+            <div id="matches"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

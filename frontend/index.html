@@ -4,28 +4,67 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Medical Record Analyzer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Analizador de Registros Médicos</h1>
-    <form id="recordForm">
-      <label>Nombre: <input type="text" id="nombre" required></label><br>
-      <label>Edad: <input type="number" id="edad" required></label><br>
-      <label>Sexo: <select id="sexo"><option>F</option><option>M</option></select></label><br>
-      <label>Síntomas:<br><textarea id="sintomas" rows="4" cols="50" required></textarea></label><br>
-      <button type="submit">Analizar</button>
-    </form>
+    <div class="page-shell">
+      <nav class="top-nav">
+        <div class="brand">
+          <span class="brand-icon">✚</span>
+          <span>MedMatch</span>
+        </div>
+        <div class="nav-links">
+          <a class="nav-button primary" href="/">
+            <span>🏠</span> Inicio
+          </a>
+          <a class="nav-button" href="/new-record">
+            <span>📝</span> Agregar registro
+          </a>
+        </div>
+      </nav>
 
-    <label for="threshold">Umbral de similitud (%) para mostrar coincidencias: <span id="thresholdVal">50</span>%</label>
-    <input type="range" id="threshold" min="0" max="100" value="50">
+      <main class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Inteligencia clínica</p>
+          <h1>Analizador de registros médicos</h1>
+          <p class="subtitle">Compara síntomas, identifica patrones y clasifica registros con similaridad semántica.</p>
+        </div>
 
-    <h2>Resultados</h2>
-    <div id="cardSaved"></div>
-    <h3>Predicciones</h3>
-    <div id="predictions"></div>
-    <h3>Registros Similares</h3>
-    <div id="matches"></div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-icon">📊</span>
+            <div>
+              <strong>Similarity AI</strong>
+              <small>Comparación semántica</small>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🧠</span>
+            <div>
+              <strong>Diagnóstico sugerido</strong>
+              <small>Modelo contextual</small>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🔒</span>
+            <div>
+              <strong>Seguridad</strong>
+              <small>Prototipo interno</small>
+            </div>
+          </div>
+        </div>
 
-    <link rel="stylesheet" href="/static/styles.css">
+        <div class="home-actions">
+          <a class="cta-button" href="/new-record">
+            <span>➕</span> Ir a agregar registros
+          </a>
+        </div>
+      </main>
+    </div>
+
     <script src="/static/app.js"></script>
   </body>
 </html>

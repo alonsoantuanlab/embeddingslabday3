@@ -47,5 +47,775 @@
     "sexo": "M",
     "Sintomas": "Dolor de cabeza y fiebre",
     "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%)"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%)"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%) (100.00%)"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%) (100.00%)"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%) (100.00%)"
+  },
+  {
+    "Nombre": "Test Usuario",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "Dolor de cabeza y fiebre",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%) (100.00%)"
+  },
+  {
+    "Nombre": "Prueba API final",
+    "edad": 41,
+    "sexo": "F",
+    "Sintomas": "dolor de pecho y dificultad para respirar",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%) (100.00%) (85.36%)"
+  },
+  {
+    "Nombre": "Prueba API final",
+    "edad": 41,
+    "sexo": "F",
+    "Sintomas": "dolor de pecho y dificultad para respirar",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable (96.81%) (100.00%) (85.36%)"
+  },
+  {
+    "Nombre": "Paciente 001",
+    "edad": 25,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 002",
+    "edad": 32,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 003",
+    "edad": 39,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 004",
+    "edad": 46,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 005",
+    "edad": 53,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 006",
+    "edad": 60,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 007",
+    "edad": 67,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 008",
+    "edad": 74,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 009",
+    "edad": 19,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 010",
+    "edad": 26,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 011",
+    "edad": 33,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 012",
+    "edad": 40,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 013",
+    "edad": 47,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 014",
+    "edad": 54,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 015",
+    "edad": 61,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 016",
+    "edad": 68,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 017",
+    "edad": 75,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 018",
+    "edad": 20,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 019",
+    "edad": 27,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 020",
+    "edad": 34,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 021",
+    "edad": 41,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 022",
+    "edad": 48,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 023",
+    "edad": 55,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 024",
+    "edad": 62,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 025",
+    "edad": 69,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 026",
+    "edad": 76,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 027",
+    "edad": 21,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 028",
+    "edad": 28,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 029",
+    "edad": 35,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 030",
+    "edad": 42,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 031",
+    "edad": 49,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 032",
+    "edad": 56,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 033",
+    "edad": 63,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 034",
+    "edad": 70,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 035",
+    "edad": 77,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 036",
+    "edad": 22,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 037",
+    "edad": 29,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 038",
+    "edad": 36,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 039",
+    "edad": 43,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 040",
+    "edad": 50,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 041",
+    "edad": 57,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 042",
+    "edad": 64,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 043",
+    "edad": 71,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 044",
+    "edad": 78,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 045",
+    "edad": 23,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 046",
+    "edad": 30,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 047",
+    "edad": 37,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 048",
+    "edad": 44,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 049",
+    "edad": 51,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 050",
+    "edad": 58,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 051",
+    "edad": 65,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 052",
+    "edad": 72,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 053",
+    "edad": 79,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 054",
+    "edad": 24,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 055",
+    "edad": 31,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 056",
+    "edad": 38,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 057",
+    "edad": 45,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 058",
+    "edad": 52,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 059",
+    "edad": 59,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 060",
+    "edad": 66,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 061",
+    "edad": 73,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 062",
+    "edad": 18,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 063",
+    "edad": 25,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 064",
+    "edad": 32,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 065",
+    "edad": 39,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 066",
+    "edad": 46,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 067",
+    "edad": 53,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 068",
+    "edad": 60,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 069",
+    "edad": 67,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 070",
+    "edad": 74,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 071",
+    "edad": 19,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 072",
+    "edad": 26,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 073",
+    "edad": 33,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 074",
+    "edad": 40,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 075",
+    "edad": 47,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 076",
+    "edad": 54,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 077",
+    "edad": 61,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 078",
+    "edad": 68,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 079",
+    "edad": 75,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 080",
+    "edad": 20,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 081",
+    "edad": 27,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 082",
+    "edad": 34,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 083",
+    "edad": 41,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 084",
+    "edad": 48,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 085",
+    "edad": 55,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 086",
+    "edad": 62,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 087",
+    "edad": 69,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 088",
+    "edad": 76,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Paciente 089",
+    "edad": 21,
+    "sexo": "F",
+    "Sintomas": "fatiga, aumento de peso, frialdad",
+    "Posible Diagnostico": "Hipotiroidismo"
+  },
+  {
+    "Nombre": "Paciente 090",
+    "edad": 28,
+    "sexo": "M",
+    "Sintomas": "sibilancias, opresión en el pecho, dificultad respiratoria",
+    "Posible Diagnostico": "Asma bronquial"
+  },
+  {
+    "Nombre": "Paciente 091",
+    "edad": 35,
+    "sexo": "F",
+    "Sintomas": "sed excesiva, micción frecuente, fatiga",
+    "Posible Diagnostico": "Diabetes tipo 2"
+  },
+  {
+    "Nombre": "Paciente 092",
+    "edad": 42,
+    "sexo": "M",
+    "Sintomas": "dolor epigástrico, náuseas, ardor estomacal",
+    "Posible Diagnostico": "Gastritis"
+  },
+  {
+    "Nombre": "Paciente 093",
+    "edad": 49,
+    "sexo": "F",
+    "Sintomas": "dolor de cabeza intenso, sensibilidad a la luz, náuseas",
+    "Posible Diagnostico": "Migraña"
+  },
+  {
+    "Nombre": "Paciente 094",
+    "edad": 56,
+    "sexo": "M",
+    "Sintomas": "tos productiva, fiebre, dolor torácico",
+    "Posible Diagnostico": "Neumonía"
+  },
+  {
+    "Nombre": "Paciente 095",
+    "edad": 63,
+    "sexo": "F",
+    "Sintomas": "dolor articular, rigidez matutina, hinchazón",
+    "Posible Diagnostico": "Artritis"
+  },
+  {
+    "Nombre": "Paciente 096",
+    "edad": 70,
+    "sexo": "M",
+    "Sintomas": "fatiga, debilidad, mareo",
+    "Posible Diagnostico": "Anemia"
+  },
+  {
+    "Nombre": "Paciente 097",
+    "edad": 77,
+    "sexo": "F",
+    "Sintomas": "dolor en el pecho, dificultad para respirar, sudoración fría",
+    "Posible Diagnostico": "Infarto agudo de miocardio"
+  },
+  {
+    "Nombre": "Paciente 098",
+    "edad": 22,
+    "sexo": "M",
+    "Sintomas": "fiebre alta, tos seca, pérdida de gusto",
+    "Posible Diagnostico": "Infección por COVID-19"
+  },
+  {
+    "Nombre": "Paciente 099",
+    "edad": 29,
+    "sexo": "F",
+    "Sintomas": "dolor abdominal bajo, náuseas, fiebre leve",
+    "Posible Diagnostico": "Apendicitis"
+  },
+  {
+    "Nombre": "Paciente 100",
+    "edad": 36,
+    "sexo": "M",
+    "Sintomas": "pérdida de memoria, confusión, desorientación",
+    "Posible Diagnostico": "Demencia tipo Alzheimer probable"
+  },
+  {
+    "Nombre": "Alonso",
+    "edad": 39,
+    "sexo": "M",
+    "Sintomas": "dolor abdominal y vomito",
+    "Posible Diagnostico": "Apendicitis (88.18%)"
+  },
+  {
+    "Nombre": "Alonso",
+    "edad": 39,
+    "sexo": "M",
+    "Sintomas": "dolor abdominal y vomito",
+    "Posible Diagnostico": "Apendicitis (88.18%)"
   }
 ]

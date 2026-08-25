@@ -156,3 +156,12 @@ def index():
         with open(index_path, 'r', encoding='utf-8') as f:
             return HTMLResponse(f.read())
     return HTMLResponse('<html><body><h2>Frontend not found</h2></body></html>')
+
+
+@app.get('/new-record')
+def new_record_page():
+    new_record_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'frontend', 'add-record.html'))
+    if os.path.exists(new_record_path):
+        with open(new_record_path, 'r', encoding='utf-8') as f:
+            return HTMLResponse(f.read())
+    return HTMLResponse('<html><body><h2>Página de registro no encontrada</h2></body></html>')
